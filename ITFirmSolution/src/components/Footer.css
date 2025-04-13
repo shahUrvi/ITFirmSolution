@@ -1,0 +1,110 @@
+.footer {
+  background-color: #0d2a53;
+  color: white;
+  padding: 30px 50px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  margin: 10px;
+}
+
+/* Main Heading Style for IT Solutions */
+.main-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Regular section titles */
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+/* Quick Links Styling */
+.quick-links-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quick-links-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px 30px;
+}
+
+.quick-links-grid div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.quick-links-grid svg {
+  margin-right: 8px;
+  color: white;
+}
+
+/* Icons in contact + social */
+.footer-section svg {
+  font-size: 16px;
+  color: white;
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social-icons svg {
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Subscribe Form */
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.subscribe-form input {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 3px;
+  width: 180px;
+}
+
+.subscribe-form button {
+  padding: 6px 12px;
+  background-color: #9b8df1;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}

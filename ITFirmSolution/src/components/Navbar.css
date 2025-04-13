@@ -1,0 +1,84 @@
+/* Logo styling */
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0047AB !important;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* Navbar layout */
+.navbar {
+  position: fixed;  
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  width: 100%;
+  padding: 16px 32px;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px; /* Adjusted from 32px for tighter layout */
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 20px; /* Adjusted from 28px for reduced spacing */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #0047AB;
+}
+
+/* Auth button (used for Login/Signup modal open) */
+.auth-btn {
+  background: none;
+  border: none;
+  font: inherit;
+  color: #000;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.auth-btn:hover {
+  color: #0047AB;
+}
+
+/* Get in Touch button */
+.btn-get-touch {
+  background-color: #0047AB;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-get-touch:hover {
+  background-color: #003a94;
+}
