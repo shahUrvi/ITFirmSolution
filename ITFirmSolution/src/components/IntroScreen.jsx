@@ -7,7 +7,7 @@ const IntroScreen = () => {
     <div className="intro-screen">
       <div className="intro-content">
         <img src={logo} alt="IT Solutions Logo" className="intro-logo" />
-        <h1 className="intro-text">IT Solutions</h1>
+        <h1 className="intro-text">IT Solutions From Shah Urvi</h1>
       </div>
     </div>
   );

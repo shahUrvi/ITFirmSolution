@@ -13,6 +13,7 @@ const Footer = () => {
         {/* IT Solutions - Main Heading */}
         <div className="footer-section">
           <h1 className="main-heading">IT Solutions</h1>
+          <h2>From Shah Urvi</h2>
           <p>
             Providing tailored IT solutions<br />
             for your digital success
