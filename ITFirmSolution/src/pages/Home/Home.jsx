@@ -8,6 +8,7 @@ import About from '../About/About'
 import Services from '../Services/Services'; // 👈 Import your component
 import Career from '../Careers/Careers'
 import Contact from '../Contact/Contact'
+import Portfolio from '../Portfolio/Portfolio'
 
 function Home() {
   return (
@@ -52,6 +53,9 @@ function Home() {
       </section>
       <section id="about">
         <About/>
+      </section>
+      <section id="portfolio">
+        <Portfolio />
       </section>
       <section id="career">
         <Career />

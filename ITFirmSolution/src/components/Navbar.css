@@ -48,6 +48,23 @@
   color: #0047AB;
 }
 
+/* Dashboard icon */
+.dashboard-icon {
+  color: #000;
+  font-size: 3.5rem; /* Increased for much larger icon size */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  margin: 0 16px; /* Slightly more spacing for larger icon */
+  padding: 4px; /* Added padding for better click area */
+}
+
+.dashboard-icon:hover {
+  color: #0047AB;
+  transform: scale(1.1); /* Slight zoom on hover for visibility */
+}
+
 /* Auth button (used for Login/Signup modal open) */
 .auth-btn {
   background: none;
@@ -63,6 +80,24 @@
 }
 
 .auth-btn:hover {
+  color: #0047AB;
+}
+
+/* Login/Signup button */
+.login-button {
+  background: none;
+  border: none;
+  font: inherit;
+  color: #000;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.login-button:hover {
   color: #0047AB;
 }
 

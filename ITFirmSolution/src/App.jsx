@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import IntroScreen from "./components/IntroScreen"; // Add this line
-
+import IntroScreen from "./components/IntroScreen";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Services from "./pages/Services/Services";
@@ -41,6 +40,7 @@ function App() {
     }
   }, [darkMode]);
 
+  // Intro screen timer
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowIntro(false);
@@ -49,6 +49,17 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Redirect to home after intro
+  const RedirectToHome = () => {
+    const navigate = useNavigate();
+    useEffect(() => {
+      if (!showIntro) {
+        navigate("/", { replace: true });
+      }
+    }, []);
+    return null;
+  };
+
   if (showIntro) {
     return <IntroScreen />;
   }
@@ -56,6 +67,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <RedirectToHome /> {/* Force home page */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -66,6 +78,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/get-started" element={<Home />} /> {/* For Get in Touch */}
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
