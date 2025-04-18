@@ -1,8 +1,17 @@
+/* Load Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap');
+
 .footer {
   background-color: #0d2a53;
   color: white;
   padding: 30px 50px;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .footer {
+  background-color: #1E1E1E;
+  color: #f0f0f0;
 }
 
 .footer-container {
@@ -18,17 +27,17 @@
   margin: 10px;
 }
 
-/* Main Heading Style for IT Solutions */
 .main-heading {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Regular section titles */
 .footer-section h2 {
   font-size: 18px;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .footer-section p {
@@ -36,7 +45,6 @@
   margin: 6px 0;
 }
 
-/* Quick Links Styling */
 .quick-links-section {
   display: flex;
   flex-direction: column;
@@ -45,7 +53,7 @@
 
 .quick-links-title {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 12px;
   text-align: center;
 }
@@ -67,11 +75,31 @@
   color: white;
 }
 
-/* Icons in contact + social */
+.dark-mode .quick-links-grid svg {
+  color: #32CD32;
+}
+
+/* Make quick links clickable */
+.quick-links-grid a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.quick-links-grid a:hover {
+  color: #32CD32;
+}
+
 .footer-section svg {
   font-size: 16px;
   color: white;
   margin-right: 10px;
+}
+
+.dark-mode .footer-section svg {
+  color: #32CD32;
 }
 
 .social-icons {
@@ -84,9 +112,13 @@
   font-size: 16px;
   cursor: pointer;
   color: white;
+  transition: color 0.3s ease;
 }
 
-/* Subscribe Form */
+.dark-mode .social-icons svg:hover {
+  color: #4CAF50;
+}
+
 .subscribe-form {
   display: flex;
   gap: 10px;
@@ -98,6 +130,14 @@
   border: none;
   border-radius: 3px;
   width: 180px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark-mode .subscribe-form input {
+  background-color: #2D2D2D;
+  color: #f0f0f0;
 }
 
 .subscribe-form button {
@@ -107,4 +147,10 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .subscribe-form button {
+  background-color: #4CAF50;
 }

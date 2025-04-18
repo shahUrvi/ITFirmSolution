@@ -1,7 +1,12 @@
 .contact-section {
   padding: 50px 20px;
   text-align: center;
-  background-color: #fff;
+  background-color: #fff; /* Default light mode background */
+}
+
+.dark-mode .contact-section {
+  background-color: #121212; /* Dark mode background color */
+  color: #f0f0f0; /* Light text color for readability */
 }
 
 .contact-section h2 {
@@ -13,6 +18,10 @@
   font-size: 1.1rem;
   margin-bottom: 40px;
   color: #555;
+}
+
+.dark-mode .contact-section p {
+  color: #bbb; /* Lighter text for better contrast in dark mode */
 }
 
 .contact-container {
@@ -44,6 +53,13 @@
   resize: none;
 }
 
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+  background-color: #333; /* Dark background for input fields in dark mode */
+  color: #fff; /* White text on input fields */
+  border-color: #555; /* Slightly darker border for better contrast */
+}
+
 .contact-form button {
   background-color: #8a3ffc;
   color: #fff;
@@ -57,6 +73,10 @@
 
 .contact-form button:hover {
   background-color: #692be3;
+}
+
+.dark-mode .contact-form button {
+  background-color: #4CAF50; /* Green shade in dark mode */
 }
 
 .contact-info {
@@ -77,23 +97,61 @@
   color: #333;
 }
 
+.dark-mode .info-item {
+  color: #bbb; /* Lighter color for text in dark mode */
+}
+
 .info-item .icon {
   color: #8a3ffc;
   font-size: 1.2rem;
 }
 
+.dark-mode .info-item .icon {
+  color: #32CD32; /* Green color for icons in dark mode */
+}
+
 .social-icons {
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px; /* Increased gap between icons */
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .social-icons a {
   color: #000;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: color 0.3s;
+}
+
+.social-icons a svg {
+  width: 24px;
+  height: 24px;
+  color: inherit;
 }
 
 .social-icons a:hover {
   color: #8a3ffc;
 }
+
+.dark-mode .social-icons a {
+  color: #f0f0f0; /* Adjust icon color in dark mode */
+}
+
+.dark-mode .social-icons a:hover {
+  color: #32CD32; /* Green shade on hover in dark mode */
+}
+
+.phone-icon {
+  color: #8a3ffc;
+  font-size: 1.5rem;
+}
+
+.dark-mode .phone-icon {
+  color: #32CD32; /* Green color for phone icon in dark mode */
+}
+

@@ -43,10 +43,10 @@ function Career() {
 
       {/* Verification Section */}
       <div className="verification-section">
-        <h2 className="verification-heading">
-          <span style={{ color: "#2b6cb0" }}>Employee</span> / Intern Verification
-        </h2>
-        <div className="verification-container">
+      <h2 className="verification-heading">
+  <span className="highlight">Employee</span> / Intern Verification
+</h2>
+  <div className="verification-container">
           <form className="verification-form">
             <label>Full Name</label>
             <input type="text" placeholder="Enter full name" />

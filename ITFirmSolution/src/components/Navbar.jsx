@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaTachometerAlt } from "react-icons/fa"; // Using react-icons for the dashboard icon
+import { FaTachometerAlt, FaMoon, FaSun } from "react-icons/fa";
 import AuthModal from "../pages/AuthModal/AuthModal"; // Adjust path as needed
 import "./Navbar.css";
 
 function Navbar() {
   const [showAuthModal, setShowAuthModal] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark-mode", darkMode);
+  }, [darkMode]);
+
+  const toggleTheme = () => {
+    setDarkMode(prev => !prev);
+  };
 
   return (
     <>
@@ -27,10 +36,21 @@ function Navbar() {
             </li>
           </ul>
 
-          <Link className="nav-link dashboard-icon" to="/dashboard" title="Dashboard">
-  <FaTachometerAlt /> Dashboard
-</Link>
-          <Link className="btn-get-touch" to="/get-started">Get in Touch</Link>
+          <div className="right-buttons">
+            <button
+              className="theme-toggle"
+              onClick={toggleTheme}
+              aria-label="Toggle Dark Mode"
+            >
+              {darkMode ? <FaSun /> : <FaMoon />}
+            </button>
+
+            <Link className="nav-link dashboard-icon" to="/dashboard" title="Dashboard">
+              <FaTachometerAlt /> Dashboard
+            </Link>
+
+            <Link className="btn-get-touch" to="/get-started">Get in Touch</Link>
+          </div>
         </div>
       </nav>
 

@@ -2,6 +2,11 @@
   padding: 4rem 2rem;
   background-color: #eaf0ff;
   text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .services-section {
+  background-color: #1E1E1E; /* Dark Gray */
 }
 
 .header-center {
@@ -12,6 +17,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .header-center {
+  color: #F0F0F0; /* White Shade */
 }
 
 .title {
@@ -19,12 +30,22 @@
   font-weight: 700;
   color: #111;
   margin-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark-mode .title {
+  color: #FFFFFF; /* White */
 }
 
 .subtitle {
   font-size: 1.1rem;
   color: #444;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode .subtitle {
+  color: #E0E0E0; /* Slightly darker white shade */
 }
 
 /* Services Grid */
@@ -32,10 +53,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
-  justify-content: center; /* centers the grid inside the parent */
+  justify-content: center;
   max-width: 1200px;
-  margin: 0 auto; /* centers the entire grid container */
-  padding: 0 1rem; /* prevents edges sticking on smaller screens */
+  margin: 0 auto;
+  padding: 0 1rem;
+  transition: color 0.3s ease;
 }
 
 .service-card {
@@ -43,18 +65,35 @@
   border-radius: 16px;
   padding: 1.8rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.3s ease;
   max-width: 280px;
   text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode .service-card {
+  background-color: #2D2D2D; /* Medium Dark Gray */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: #F0F0F0; /* White Shade */
 }
 
 .service-card:hover {
   transform: translateY(-5px);
 }
 
+.dark-mode .service-card:hover {
+  background-color: #1E1E1E; /* Darker hover state */
+}
+
 .icon {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .icon {
+  color: #32CD32; /* LimeGreen */
 }
 
 .service-card h3 {
@@ -62,11 +101,20 @@
   font-weight: 600;
   margin-bottom: 0.6rem;
   color: #111;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark-mode .service-card h3 {
+  color: #FFFFFF; /* White */
 }
 
 .service-card p {
   font-size: 0.95rem;
   color: #555;
+}
+
+.dark-mode .service-card p {
+  color: #E0E0E0; /* Slightly darker white shade */
 }
 
 /* Responsive Layout */

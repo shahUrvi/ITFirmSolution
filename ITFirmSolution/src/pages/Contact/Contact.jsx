@@ -42,10 +42,10 @@ function Contact() {
           </div>
 
           <div className="social-icons">
-            <a href="#"><FaFacebook /></a>
-            <a href="#"><FaLinkedin /></a>
-            <a href="#"><FaTwitter /></a>
-          </div>
+  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+</div>
         </div>
       </div>
     </div>

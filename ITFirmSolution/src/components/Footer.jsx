@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+
 import {
   FaHome, FaBriefcase, FaPhone, FaTools,
   FaEnvelope, FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter
@@ -24,10 +25,10 @@ const Footer = () => {
         <div className="footer-section quick-links-section">
           <div className="quick-links-title">Quick Links</div>
           <div className="quick-links-grid">
-            <div><FaHome /> Home</div>
-            <div><FaBriefcase /> Careers</div>
-            <div><FaPhone /> Contact</div>
-            <div><FaTools /> Services</div>
+            <div><a href="/home"><FaHome /> Home</a></div>
+            <div><a href="/careers"><FaBriefcase /> Careers</a></div>
+            <div><a href="/contact"><FaPhone /> Contact</a></div>
+            <div><a href="/services"><FaTools /> Services</a></div>
           </div>
         </div>
 

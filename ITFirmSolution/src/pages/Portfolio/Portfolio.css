@@ -1,47 +1,80 @@
 .portfolio-container {
-    padding: 60px 20px;
-    background-color: #f8f9fb;
-    text-align: center;
-  }
-  
-  .portfolio-container h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .portfolio-container p {
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-  }
-  
-  .portfolio-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .portfolio-card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition: 0.3s ease;
-  }
-  
-  .portfolio-card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .portfolio-card h4 {
-    margin: 15px 0 10px 0;
-    font-size: 1.2rem;
-  }
-  
-  .portfolio-card p {
-    padding: 0 15px 20px;
-    color: #555;
-  }
-  
+  padding: 60px 20px;
+  background-color: #f8f9fb;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+.dark-mode .portfolio-container {
+  background-color: #1E1E1E; /* Dark Gray */
+  color: #F0F0F0; /* White Shade */
+}
+
+.portfolio-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark-mode .portfolio-container h2 {
+  color: #FFFFFF; /* White */
+}
+
+.portfolio-container p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode .portfolio-container p {
+  color: #E0E0E0; /* Slightly darker white shade */
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  transition: color 0.3s ease;
+}
+
+.portfolio-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode .portfolio-card {
+  background-color: #2D2D2D; /* Medium Dark Gray */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #F0F0F0; /* White Shade */
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-card h4 {
+  margin: 15px 0 10px 0;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.dark-mode .portfolio-card h4 {
+  color: #FFFFFF; /* White */
+}
+
+.portfolio-card p {
+  padding: 0 15px 20px;
+  color: #555;
+}
+
+.dark-mode .portfolio-card p {
+  color: #E0E0E0; /* Slightly darker white shade */
+}
